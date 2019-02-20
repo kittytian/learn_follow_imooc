@@ -1,0 +1,204 @@
+/*首先清除默认值 */
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    /*background: #f2f4f6;*/
+}
+.header img{
+    width: 300px;
+    height:85px;
+    padding-left: 100px;
+    padding-top: 8px;
+}
+.header .logo{
+    float:left;
+}
+.header .nav{
+    float: right;
+}
+.header .nav ul{
+    padding-right: 100px;
+}
+.header .nav ul li{
+    float:left;
+    list-style-type: none;
+    width:80px;
+    height: 100px;
+    line-height: 100px;/*垂直居中 行高和li高度一样*/
+    font-size:15px;
+    font-weight: bolder;
+    color: #7D7D7D;
+
+}
+
+.main .top{
+    width: 100%;
+    height: 600px;
+}
+.main .top img{
+    width: 100%;
+    height: 600px;
+}
+.main .topLayer{
+    position: absolute;/*加了absolute层级脱离文档流 比不脱离文档流的层级高*/
+    top:100px;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 600px;
+    opacity: 0.5;/*透明度属性*/
+
+
+}
+.main .topLayer-top {
+    /*main 上面部分图上的文字 也需要绝对定位 因为div是一个一个换行排列的*/
+    width: 500px;
+    height: 300px;
+    /*background-color: #00aaee;*/
+    position: absolute;
+    top:400px;/*距离顶部 大概400px是中间 垂直居中*/
+    margin-top: -150px;/*上移它高度本身的一半 垂直居中*/
+    right: 50%;/*水平居中*/
+    margin-right:-250px;/*水平居中要向右偏移本身宽度的一半*/
+    z-index: 2;/*加了absolute层级脱离文档流 比不脱离文档流的层级高 要比遮罩层高*/
+}
+.main .topLayer-top .word{
+    padding-top: 100px;
+    color:#ffffff;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align:center ;/*居中*/
+    font-family: "Miscrosoft YaHei";
+}
+.main .topLayer-top button {
+    width: 200px;
+    height: 60px;
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #f5704f;
+    text-align:center ;/*居中*/
+    font-family: "Miscrosoft YaHei";
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius:8px ; /*设置8px圆角*/
+    clear:both;
+    /*设置居中 跟外面的 500px 先到中间250px 再左移按钮的一半100px 所以距左填充150px*/
+    margin-left: 150px;
+
+}
+
+.main .middle{
+    width: 1000px;
+    margin: 0 auto;/*居中显示 */
+
+}
+.main .middle .m-top .commen{
+    float: left;
+    width: 33.3%;
+    padding-top: 50px ;
+    text-align: center;/*居中*/
+
+}
+.main .middle .m-top .commen img{
+    width:100px;
+    height:100px;
+}
+.main .middle .m-top .commen.comm{
+    font-size:20px;
+    color: #7d7c7f;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.main .middle .m-middle{
+    font-size:26px;
+    color: #e19796;
+    font-weight: bold;
+    padding-top: 50px;/*没有显示是因为之前用了浮动 浮动影响*/
+    font-style: italic;
+    text-align: center;/*字体居中*/
+    padding-bottom: 50px;
+
+}
+/*在m-middle和op间m-top间用空标签清除浮动*/
+.clear{
+    clear: both;
+}
+.main .middle .m-bottom .m-com{
+    float: left;
+    /*width: 33.3% ;*/
+    padding: 10px;/*上下左右距离10px*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.main .middle .m-bottom .m-com img{
+    width: 310px;
+    height: 260px;
+}
+.main .middle .m-bottom .m-com .des1{
+
+    color: #7d7d7f;
+    padding-top: 20px;
+    /*text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    两行字都需要居中 那就写在父级上*/
+
+ }
+.main .middle .m-bottom .m-com .des2{
+    padding-top: 10px;
+    color:#dbdbdc;
+    /*text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        两行字都需要居中 那就写在父级上*/
+}
+.main .bottom{
+    background-color: peachpuff;
+}
+.main .bottom .content{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main .bottom .title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7d7c7f;
+    font-family: "Miscrosoft YaHei";
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.main .bottom .content .pic-content dl{
+    float: left;
+    width: 470px;
+    margin:10px 12px;
+}
+.main .bottom .content .pic-content dl img{
+    width: 470px;
+    height:460px;
+}
+.main .bottom .content .pic-content dl .word {
+    padding-top: 20px;
+    font-size: 20px;
+    color:lightgray;
+    font-weight: bold;
+    padding-bottom: 50px;
+
+}
+.footer{
+    width: 100%;
+    height:100px;
+    background-color: #040a10;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    font-family: "Miscrosoft YaHei";
+    font-size: 15px;
+}

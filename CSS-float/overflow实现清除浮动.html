@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        .per{
+            width: 500px;
+            height: auto;
+            border: 1px solid #000;
+            overflow: hidden;/*给父元素添加overflow(处理溢出问题 截断子元素溢出的部分）和zoom防止塌陷*/
+            zoom:1;/*IE的专用属性*/
+        }
+        
+        .test{
+            width: 100px;
+            height: 30px;
+            background: red;
+            border: 1px solid #FFF;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="per">
+        <div class="test"></div>
+        <div class="test"></div>
+        <div class="test"></div>
+    </div>
+</body>
+</html>

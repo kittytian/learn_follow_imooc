@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css网页布局</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--开发：从整体到部分 从上到下 从左到右-->
+<!--头部 效果图分两块 左侧logo 右侧导航-->
+<div class="header">
+    <div class="logo">
+        <img src="image/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li>首页</li>
+            <li>图片</li>
+            <li>视频</li>
+            <li>手记</li>
+        </ul>
+    </div>
+
+</div>
+<!--主体 分大三块 图片(遮罩层） +小图标文字图片 +底部图片 几个div -->
+<div class="main">
+    <div class="top">
+        <img src="image/1.jpeg" alt="1">
+    </div>
+    <!--遮罩层-->
+    <div class="topLayer"></div>
+    <div class="topLayer-top">
+        <div class="word">MY BEAUTIFUL LIFE</div>
+        <button>LOOK MORE &gt;</button> <!--&gt 大于号 -->
+    </div>
+    <!--中间部分-->
+    <div class="middle">
+        <div class="m-top">
+            <div class="commen weibo">
+                <img src="image/weibo.png">
+                <div class="comm">MICROBLOG</div>
+            </div>
+            <div class="commen weixin">
+                <img src="image/weixin.png">
+                <div class="comm">WECHAT</div>
+            </div>
+            <div class="commen qq">
+                <img src="image/QQ.png">
+                <div class="comm">QQ</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="m-middle">
+            <!--用br手动换行-->
+            "I want to give good things to record down,<br>after the recall will be very beautiful"
+        </div>
+        <div class="m-bottom">
+            <div class="m-com">
+                <img src="image/03-01.jpg">
+                <!--两行文字用两个div-->
+                <div class="des1">Cool Image</div>
+                <div class="des2">Record The Picture</div>
+            </div>
+            <div class="m-com">
+                <img src="image/03-02.jpg">
+                <div class="des1">Cool Image</div>
+                <div class="des2">Record The Picture</div>
+            </div>
+            <div class="m-com">
+                <img src="image/03-03.jpg">
+                <div class="des1">Cool Image</div>
+                <div class="des2">Record The Picture</div>
+            </div>
+        </div>
+
+    </div>
+    <!--中间的底部部分 两大部分 标题 和两个图文混排-->
+    <div class="clear"></div> <!--清除浮动 不让背景色包裹中间部分-->
+    <div class="bottom">
+        <div class="content">
+            <!--内容部分-- 外面是背景部分-->
+            <div class="title">
+                FROM THE PHOTO ALBUM
+            </div>
+            <div class="pic-content">
+                <!--图文混排  html中用dl 表示一组图文混排 dt是图片 dd是文字描述-->
+                <dl>
+                    <dt><img src="image/04-01.jpg"></dt>
+                    <dd class="word">Life is like a book, just read more and more refined, more write more carefully. When read, mind open, all things have been indifferent to heart. Life is the precipitation.</dd>
+                </dl>
+                <dl>
+                    <dt><img src="image/04-02.jpg"></dt>
+                    <dd class="word">Life is like a book, just read more and more refined, more write more carefully. When read, mind open, all things have been indifferent to heart. Life is the precipitation.</dd>
+                </dl>
+            </div>
+            <div class="clear"></div> <!--清除浮动 让背景色显示-->
+        </div>
+    </div>
+
+
+
+</div>
+<!--底部 这三块分别用一个div容纳-->
+<div class="footer">
+    © 2016 imooc.com
+</div>
+
+
+</body>
+</html>

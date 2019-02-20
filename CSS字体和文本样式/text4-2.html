@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>输入文本</title>
+    <style type="text/css">
+        *{padding:0px;margin: 0px;}
+
+        /* .warp{
+               height:400px;
+               width: 100%;
+               border:1px blue solid;
+               line-height: 400px; 单行文字垂直居中 line-height和height一样就行
+               text-align: center;
+
+              }*/
+        .warp{
+            height:400px;
+            width: 100%;
+            border:1px blue solid;
+            display:table;
+        }
+        .content{vertical-align: middle;
+            display:table-cell;
+            text-align: center;}
+        /*使div这种块级元素产生垂直居中（适用于行内和单元格）的效果 要把块级元素转化成单元格元素
+        内容display设置为 table-cell 父元素display设置为table
+         */
+    </style>
+</head>
+<body>
+<!-- <div class="warp">
+  <p>Welcome to Website<br>Welcome to Website</p>
+</div> -->
+<div class="warp">
+    <div class="content">
+        <img src="img\logo.png"/>
+        <h1>Welcome to Website</h1>
+        <h2>CSS层叠样式，用于网页样式设置，使网页更美观。</h2>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        
+        .div2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 50px;/*写left和top会出现层 只写position：absolute；的话仍然是标准流*/
+            top: 50px;/*以浏览器页面左上角为原点定位*/
+            /*fixed固定定位和absolute的区别：fixed不受制于父元素*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>

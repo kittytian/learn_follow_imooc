@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .per{
+            width:500px;
+            height: auto;
+            border: 1px solid #000;
+        }
+        
+        .test{
+            width: 80px;
+            height: 30px;
+            background: red;
+            border: 1px solid #FFF;
+            float: left;/*父元素per的高度没有了*/
+        }
+        
+        .bro{
+            width: 100px;
+            height: 100px;
+            background: blue; /*本应该出现父元素下面 结果出现在红色方块的下面 第二个副作用*/
+        }
+    </style>
+</head>
+<body>
+    <div class="per">
+    <div class="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
+    </div>
+    <div class="bro"></div>
+</body>
+</html>
