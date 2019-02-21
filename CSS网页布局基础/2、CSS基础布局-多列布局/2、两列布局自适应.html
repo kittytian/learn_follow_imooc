@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:90%;/* 自适应 用百分比 90% 有白边距左右两边为5%白色边距 控制容器宽度 限制里面两个div的浮动效果*/
+            margin: 0 auto;/*居中*/
+        }
+       .left{
+           width:60%;
+           height: 1000px;
+           float:left;
+           background: #1a5acd;
+           color: #fff;
+       }
+        .right{
+            width: 40%;
+            height: 1000px;
+            float:right;
+            background: #5880f9;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">这是页面左侧</div>
+    <div class="right">这是页面右侧</div>
+</div>
+</body>
+</html>
